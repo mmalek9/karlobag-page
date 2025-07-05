@@ -6,6 +6,10 @@
     font-weight: 600;
     font-style: normal;
   }
+
+  html {
+    scroll-behavior: smooth!important;
+  }
   
   body {
     font-size: 14px;
@@ -85,6 +89,9 @@
     padding: 1rem 5rem;
     border: solid 2px white;
     border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
   }
 
   .menu-item:hover {
@@ -112,7 +119,7 @@
     align-items: center;
     justify-content: center;
 
-    .gallery {
+    .rooms {
       display: flex;
       flex-direction: column;
       width: 70%;
@@ -193,7 +200,6 @@
   }
   
   ::-webkit-scrollbar-track {
-    /* background-color: lightgray; */
     background-color: lightblue;
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -202,7 +208,5 @@
   ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background-color: rgb(13, 167, 218);
-
-    /* background: gray;  */
+    background-color: rgb(10, 139, 182);
   }
