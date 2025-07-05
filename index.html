@@ -4,8 +4,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
 </head>
-<body>
+<body class="loading">
   <div class="background-container">
+
+    <div id="loader-overlay">
+        Ładowanie... 
+    </div>
+
     <div class="content-wrapper">
       <div class="header">
         <div class="title">
@@ -35,5 +40,17 @@
       </div>
     </div>
   </div>
+
+  <script>
+        window.addEventListener('load', function() {
+            const loaderOverlay = document.getElementById('loader-overlay');
+            const body = document.body;
+            loaderOverlay.classList.add('hidden');
+            body.classList.remove('loading');
+            loaderOverlay.addEventListener('transitionend', function() {
+                loaderOverlay.remove();
+            });
+        });
+    </script>
 </body>
 </html>
