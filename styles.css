@@ -91,7 +91,8 @@
 }
 
 .image {
-  width: 100%;
+  width: 70%;
+  align-self: center;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -200,6 +201,10 @@
 
   .house-content {
     padding-top: 2rem;
+  }
+
+  .image {
+    width: 100%;
   }
 }
 
