@@ -14,10 +14,11 @@ html {
 body {
     font-size: 14px;
     color: rgb(231, 141, 141);
+    overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 0;
 }
 
 ::-webkit-scrollbar-track {
