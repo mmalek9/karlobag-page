@@ -10,7 +10,7 @@
   gap: 1rem;
 }
 
-.header {
+.welcome {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -95,7 +95,6 @@
   width: 80%;
   padding: 3rem;
   text-align: center;
-  min-height: 100vh;
 }
 
 .house-content {
