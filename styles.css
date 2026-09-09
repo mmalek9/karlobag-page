@@ -33,11 +33,12 @@
 }
 
 .nav-wordmark {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Karla", system-ui, sans-serif;
   font-size: 19px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #1f2c33;
+  font-weight: bold;
 }
 
 .nav-links {
@@ -63,7 +64,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   padding: 80px 24px 96px;
   background-image: url("images/hero.jpg");
@@ -90,6 +91,9 @@
   align-items: center;
   gap: 26px;
   max-width: 760px;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .hero-logo {
@@ -97,13 +101,12 @@
   height: 104px;
   border-radius: 50%;
   object-fit: cover;
-  background: #fff;
-  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.3);
 }
 
 .hero-title {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Karla", sans-serif;
+  font-style: italic;
   font-weight: 300;
   font-size: clamp(38px, 6.4vw, 76px);
   line-height: 1.04;
@@ -180,7 +183,8 @@
 
 .intro-lead {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Karla", sans-serif;
+  font-style: italic;
   font-weight: 300;
   font-size: clamp(24px, 3.6vw, 42px);
   line-height: 1.28;
@@ -190,7 +194,7 @@
 
 .intro-sub {
   margin: 18px 0 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Karla", sans-serif;
   font-style: italic;
   font-weight: 300;
   font-size: clamp(17px, 2.2vw, 26px);
@@ -239,7 +243,8 @@
 
 .gallery-title-row h2 {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Karla", sans-serif;
+  font-style: italic;
   font-weight: 300;
   font-size: clamp(30px, 4.4vw, 54px);
   letter-spacing: 0.01em;
@@ -378,7 +383,8 @@
 
 .location-title-row h2 {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Karla", sans-serif;
+  font-style: italic;
   font-weight: 300;
   font-size: clamp(30px, 4.4vw, 54px);
   color: #1f2c33;
@@ -426,6 +432,16 @@
   background: #a9bcc6;
 }
 
+/* ---------- Tablet (620px - 1024px) ---------- */
+
+@media (min-width: 620px) and (max-width: 1024px) {
+  .hero-content {
+    padding-top: 8rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
 /* ---------- Mobile (< 620px) ---------- */
 
 @media (max-width: 619px) {
@@ -438,10 +454,26 @@
     padding: 24px 20px 72px;
   }
 
+  .hero-content {
+    padding-top: 8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .gallery-shot img {
     height: auto;
     width: calc(100vw - 52px);
     max-width: none;
     aspect-ratio: 4 / 3;
+  }
+}
+
+/* ---------- Small mobile (< 390px) ---------- */
+
+@media (max-width: 389px) {
+  .hero-content {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
